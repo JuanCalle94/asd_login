@@ -1,0 +1,55 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  &__container {
+    width: 80%;
+
+    @include tablet {
+      width: 70%;
+    }
+
+    @include desktop {
+      width: 20%;
+    }
+  }
+
+  &__container &__tittle {
+    font-size: 5rem;
+    margin: 3rem 0;
+    color: $darkgrey;
+  }
+
+  &__container &__form {
+    input {
+      margin-top: 1.5rem;
+      padding: 1rem .5rem;
+      width: 100%;
+      border: none;
+      border-bottom: .1rem solid $lightgrey;
+      color: $lightgrey;
+    }
+
+    label {
+        font-size: 1.4rem;
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        padding: 1.2rem 0;
+        background-color: $lightblue;
+        border-radius: .5rem;
+        color: $white;
+        margin: 4rem 0;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.table {
+  display: flex;
+  justify-content: center;
+
+  margin: 5rem;
+
+  table {
+    width: 70%;
+    background-color: $lightgrey;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    thead {
+      background-color: $blue;
+      color: $white;
+
+      tr {
+        th {
+          padding: 1rem 2rem;
+          text-align: start;
+          font-size: 1.6rem;
+          font-weight: $regular;
+        }
+      }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 1.5rem 2rem;
+                text-align: start;
+                font-size: 1.4rem;
+                font-weight: $light;
+            }
+
+            &:nth-child(odd) {
+                background-color: $grey;
+            }
+        }
+      }
+  }
+}
